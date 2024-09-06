@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "jonahkoch",
+    "motivations": "My motivation to serve as a DRep stems from a profound belief in the transformative power of decentralized technology and community-driven innovation. My vision of Cardano as a catalyst for positive global change, not just as a technological platform, but also as a paradigm shift towards a more equitable, transparent, and sustainable digital future. Equally important to me is the promotion of transparency and sustainable growth within our ecosystem. My goal is to balance short-term objectives with long-term sustainability, always keeping the interests of our diverse stakeholders at the forefront. Fostering innovation alongside ethical consideration and sustainable practices. Fundamentally, I am motivated by the potential to shape a more equitable digital future. I see immense opportunity in leveraging Cardano's capabilities to revolutionize global systems for the benefit of communities worldwide. The opportunity to contribute to this transformation is both humbling and invigorating.",
+    "objectives": "As a DRep, I stand for empowering communities through sustainable blockchain technology. Our collective autonomy, shared interests, and the long-term viability of the Cardano ecosystem are my guiding principles. I pledge to advocate for systems and protocols that promote openness, liberty, equality, and community representation within Cardano's governance framework. I will champion the development and implementation of efficient, transparent decision-making processes to ensure every voice is heard and valued. My mission is to challenge centralizing influences and ensure our blockchain serves the many, and not just the few. I vow to use this role responsibly to level the playing field, protect our fundamental rights as stakeholders, amplify diverse community voices, and preserve our digital freedoms for future participants. Together, we'll build a resilient, inclusive, and forward-thinking blockchain ecosystem that stands the test of time.",
+    "paymentAddress": "addr1qyj30gm5ccryd5nswdlexqqst8tls32ym5kf2cm7y920lpz5ax2casfhnlcpzjn6xawkma54schem3yspp98wwxg5elqmkkes9",
+    "qualifications": "ADA holder\nIntersect MBO founding member\nEMURGO Academy Learner/Teacher\nBlockchain journeyman\nIntersect working group participant\nProject Catalyst vCA/proposer/voter\nSmall business owner\nCardano Node and CLI know how\nActive Cardano community member\nCardano interim constitution workshop host\nOpen minded, listen to skepticism and contrarian views\n\n\n",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Twitter | X",
+        "uri": "https://twitter.com/jonahkoch "
+      },
+      {
+        "@type": "Link",
+        "label": "LinkedIn",
+        "uri": "https://www.linkedin.com/in/jonah-koch-52853919?trk=people-guest_people_search-card"
+      },
+      {
+        "@type": "Identity",
+        "label": "Twitter | X",
+        "uri": "https://twitter.com/jonahkoch "
+      }
+    ]
+  }
+}
