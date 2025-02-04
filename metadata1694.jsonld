@@ -1,0 +1,148 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "bio": "CIP119:bio",
+        "email": "CIP119:email",
+        "givenName": "CIP119:givenName",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [
+    {
+      "witness": {
+        "signature": {
+          "@value": "84584aa3012704581d60ceb1cc47cd31327f642216f090434b8aa1acb0aaac83aea3bef4b7b66761646472657373581d60ceb1cc47cd31327f642216f090434b8aa1acb0aaac83aea3bef4b7b6a166686173686564f4584456657269667920445265702064726570316536637563333764787965383765707a7a6d6366717336743332733665763932346a703661676137376a6d6d7666397661327458403f94a86c9a0055220397809eb76f65140406be90f76232351d256d13bfd4621336ff62b622805c9d9becd1d58ac47d272a00e547b1d477d2a9f2f0df586e0002"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "bio": {
+      "@value": "Empty"
+    },
+    "email": {
+      "@value": "Empty"
+    },
+    "givenName": {
+      "@value": "jonahkoch"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://ipfs.io/ipfs/QmecBdEz5KUpwi5ErQKdiEx6srfS5HCzbUGYNjL9kt8MpK",
+      "sha256": "7c5ca25eb035cea9425af3d33f018aac0ed44a206bdea22b021558de838ac8f2"
+    },
+    "motivations": {
+      "@value": "My motivation to serve as a DRep stems from a profound belief in the transformative power of decentralized technology and community-driven innovation. My vision of Cardano as a catalyst for positive global change, not just as a technological platform, but also as a paradigm shift towards a more equitable, transparent, and sustainable digital future. Equally important to me is the promotion of transparency and sustainable growth within our ecosystem. My goal is to balance short-term objectives with long-term sustainability, always keeping the interests of our diverse stakeholders at the forefront. Fostering innovation alongside ethical consideration and sustainable practices. Fundamentally, I am motivated by the potential to shape a more equitable digital future. I see immense opportunity in leveraging Cardano's capabilities to revolutionize global systems for the benefit of communities worldwide. The opportunity to contribute to this transformation is both humbling and invigorating."
+    },
+    "objectives": {
+      "@value": "As a DRep, I stand for empowering communities through sustainable blockchain technology. Our collective autonomy, shared interests, and the long-term viability of the Cardano ecosystem are my guiding principles. I pledge to advocate for systems and protocols that promote openness, liberty, equality, and community representation within Cardano's governance framework. I will champion the development and implementation of efficient, transparent decision-making processes to ensure every voice is heard and valued. My mission is to challenge centralizing influences and ensure our blockchain serves the many, and not just the few. I vow to use this role responsibly to level the playing field, protect our fundamental rights as stakeholders, amplify diverse community voices, and preserve our digital freedoms for future participants. Together, we'll build a resilient, inclusive, and forward-thinking blockchain ecosystem that stands the test of time."
+    },
+    "paymentAddress": {
+      "@value": "addr1qyj30gm5ccryd5nswdlexqqst8tls32ym5kf2cm7y920lpz5ax2casfhnlcpzjn6xawkma54schem3yspp98wwxg5elqmkkes9"
+    },
+    "qualifications": {
+      "@value": "ADA holder, Constitutional Convention workshop host and traveling alternate delegate, Intersect MBO founding member, Intersect working group participant, Project Catalyst vCA, proposer, and voter. EMURGO Academy Teacher and Learner, Cardano developer, node operator, and SanchoNet governance beta tester. Active Cardano community member with an open mind, whom listen to skepticism and contrarian views to develop balanced decisions that promote increased transaction volume diverse in type and purpose. To grow the community of ecosystem participants to ensure reliability and longevity of the network."
+    },
+    "references": [
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "Twitter(X)"
+        },
+        "uri": {
+          "@value": "https://twitter.com/jonahkoch "
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "Cardano_Forum_DRep_introductions"
+        },
+        "uri": {
+          "@value": "https://forum.cardano.org/t/jonahkoch-drep-individual-introduction/142552"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "1694.io_DRep_registry"
+        },
+        "uri": {
+          "@value": "https://www.1694.io/en/dreps/drep1yt8trnz8e5cnylmyygt0pyzrfw92rt9s42kg8t4rhm6t0dstyvmdn"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "Twitter(X)_pinned_post"
+        },
+        "uri": {
+          "@value": "https://x.com/jonahkoch/status/1884255820168454434?s=46&t=Tw6UywhgIeBDYbXZQNirIw"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "Github_repository"
+        },
+        "uri": {
+          "@value": "https://github.com/jonahkoch/DRep"
+        }
+      }
+    ]
+  }
+}
