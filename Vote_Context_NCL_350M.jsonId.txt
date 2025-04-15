@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "I am voting yes on this net change limit action because I believe it is an appropriate treasury expenditure when faced with the current development requirements of the Cardano ecosystem.  My primary focus in decision making currently revolves around increasing transactions in both volume and type and since Cardano has not yet fully realized all the capabilities laid forth in the original roadmap nor to fully implement Basho era advancements and upgrades increased spending will be required to fully realize Cardano's goals.  The current restrictions on speed, scaleability, and transaction volume are severely inhibiting adoption of the Cardano ecosystem and its overall marketshare of the crypto domain space. Furthermore the Cardano treasury is projected to grow by about 320 million ADA in 2025, and by setting a NCL of 350 million ADA we are ensuring prudent conservation of resereves in addition to ample support for this accelerated stage in Cardano's development."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
