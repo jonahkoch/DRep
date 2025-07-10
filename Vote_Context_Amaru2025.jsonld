@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting yes on Amaru Treasury Withdrawal 2025, funds are requested to develop Cardano’s node diversity.  This is critical for decentralization and network resilience. When multiple independent teams build node software, it reduces reliance on a single entity or codebase. The Amaru project is of high strategic importance, directly aligning and strengthening the core principles of Cardano by creating a second node implementation to further enhance network resilience and decentralization.  If a bug or vulnerability is present in one version, others may remain unaffected. Decentralization at the node-level is vital for Cardano’s future. Amaru delivers this critical client diversity, mitigating a key systemic risk.  Amaru’s implementation is a Rust-based design is which is also a strategic asset that lowers the barrier for a new generation of developers to contribute to Cardano's core. As more developers build and maintain nodes, they contribute to refining the protocol specification, surfacing ambiguities, and improving long-term maintainability. The Amaru team's funding request is reasonable, the team includes respected developers from within the Cardano ecosystem.  Furthermore the team’s administration process, which utilizes smart contracts and a public GitHub repository to ensure accountability and transparency is commendable on-chain accountability. Funding Amaru is a direct investment in a non-commercial, public good and represents a critical infrastructure investment for Cardano’s future."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
