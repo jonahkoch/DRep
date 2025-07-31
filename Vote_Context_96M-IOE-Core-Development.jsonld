@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "This proposal represents a strategically vital investment in Cardano's core infrastructure that addresses the ecosystem's most critical challenges for long-term viability and competitive positioning. The comprehensive technical scope spans fundamental improvements from consensus mechanisms to developer tooling, collectively positioning Cardano for large-scale adoption and real-world applications.\nThe scalability enhancements through Ouroboros Leios implementation and Hydra development directly tackle throughput limitations that constrain user experience during high network demand. These Layer 1 and Layer 2 solutions work synergistically to provide both immediate relief and long-term scaling capacity essential for ecosystem growth. Leios represents a significant advancement in blockchain throughput technology, while Hydra's state channels offer near-instant finality, creating a comprehensive scaling solution maintaining Cardano's security guarantees.\nThe Acropolis node architecture refresh demonstrates forward-thinking technical debt management and ecosystem participation. By transitioning to modular architecture, this initiative improves performance, reduces operational costs for stake pool operators, and creates pathways for broader community participation in core development. This architectural evolution supports Cardano's decentralization commitment by making the codebase more accessible to diverse development teams.\nThe Plutus High Assurance suite addresses critical gaps in smart contract development and security verification. Automatic formal verification, property-based testing, and static analysis provide developers with robust tooling for secure, reliable applications. These tools reduce development barriers while improving overall ecosystem security, with transaction monitoring and tiered pricing enhancing developer and user experience.\nInfrastructure improvements through Ledger-HD, LSM integration, and UTXO-HD directly address operational concerns affecting network sustainability. By reducing memory requirements and improving disk-based state management, these enhancements make node operation more accessible and cost-effective, supporting broader network participation. The KES Agent adds crucial security enhancements for stake pool operators.\nInnovative features like Nested Transactions enabling Babel Fees demonstrate Cardano's commitment to user experience improvements that differentiate it from other platforms. The ability to pay fees with native tokens removes significant friction points, potentially accelerating adoption across diverse use cases.\nInput Output Engineering's proven track record spanning Cardano's entire development history provides strong execution confidence. Their involvement from Byron through Voltaire demonstrates consistent capability in research-driven development and production-ready implementation, with retained key personnel ensuring continuity of institutional knowledge.\nThe proposal's emphasis on knowledge sharing and supplier diversity aligns with Cardano's open-source ethos and sustainability goals. Creating pathways for broader community participation while maintaining technical standards supports the ecosystem's transition toward decentralized development.\nThis represents exactly the strategic, foundational investment Cardano requires to achieve its vision of supporting global-scale decentralized applications, making support essential for continued evolution as a leading blockchain platform."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
