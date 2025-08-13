@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "This proposal represents a use of treasury funds for a private commercial venture that lacks the infrastructure foundation, governance transparency, and ecosystem-wide benefits necessary to justify direct treasury withdrawal. The tokenized real estate concept, while potentially valuable, constitutes a single vertical use case that primarily benefits the proposing company rather than providing reusable infrastructure or tools for the broader Cardano community. The proposal fundamentally misaligns with treasury funding priorities by requesting subsidization of an unproven business model that carries significant strategic risks and more broadly, for the reputation of the Cardano ecosystem. Project Catalyst or post treasury funding allocation instruments like loans represents the appropriate mechanism for experimental initiatives requiring market validation, while direct treasury withdrawals should support proven, Cardano-aligned infrastructure that scales ecosystem capabilities rather than individual commercial ventures.\nCritical technical prerequisites for real-world asset tokenization remain unaddressed, particularly the absence of decentralized Oracle infrastructure necessary for reliable property valuation and market data feeds. Without these foundational components, the proposal relies on centralized systems that contradict blockchain principles and create single points of failure that could compromise the entire platform. The governance structure lacks transparency regarding asset selection criteria, platform control mechanisms, and community participation pathways. The proposal offers no assurances of open access, decentralized oversight, or meaningful governance input from the Cardano community, creating a structurally centralized system that uses public funds to benefit private interests. The legal and regulatory framework remains insufficiently detailed despite claims of compliance readiness, particularly regarding cross-jurisdictional requirements for tokenized real estate trading across US, EU, and international markets. These complexities require extensive validation before treasury commitment rather than funding development of uncertain regulatory solutions. The proposal fails to demonstrate how the initiative creates lasting value for Cardano beyond attracting temporary TVL (Total Value Locked) that could migrate to other platforms. Without open-source components, reusable infrastructure, or developer tools that benefit the broader ecosystem, the investment primarily supports private commercial interests rather than public infrastructure development.\nTreasury funds should prioritize proven initiatives that strengthen Cardano's foundational capabilities, support decentralized infrastructure development, and create reusable components that benefit multiple projects and developers. This proposal represents a private business venture seeking public funding for market validation that would be more appropriately pursued through alternative funding mechanisms or private investment channels. Furthermore, supporting this proposal would establish concerning precedents for treasury utilization that prioritizes private commercial ventures over public infrastructure development and ecosystem-wide benefits."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
