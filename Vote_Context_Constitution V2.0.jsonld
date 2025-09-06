@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting NO on this constitutional amendment. While I agree the info budget governance action may be redundant, I have serious concerns about this proposal's process and substance.\nMost importantly, this version has been presented without broad community input and discussion that such an important document requires. The original Cardano Constitution included over 65 workshops with approximately 1,800 participants ensuring genuine community engagement. This proposed update has seen minimal community discussion and reflects only the voice of a few motivated DReps, not the ecosystem at large. The removal of the budget info action eliminates necessary accountability mechanisms. Treasury withdrawals require off-chain processes to gather DRep sentiment before posting on-chain actions. These negotiations need immutable records and nonrepudiation to ensure transparency. The budget info action, although redundant, provided essential accountability that this proposal strips away without adequate replacement. The proposed roadmap function introduces undefined requirements that create more problems than solutions. TREASURY-04a mandates DRep approval of roadmaps via info actions with greater than 50% active voting stake, but this process remains completely undefined. Making roadmap approval mandatory while limiting expenditure scope could degrade blockchain advancement and appears unconstitutional. If roadmap requirements belong in the constitution, the process must be clearly described in the main text, not buried in guardrails. This proposal asks us to vote on undefined processes and removes accountability mechanisms without proper community consultation. Constitutional changes require careful deliberation, broad consensus, and clear definitions. This amendment fails all three standards. The constitution governs our entire ecosystem. Rushing changes without community input sets dangerous precedent for future governance. We need transparency, accountability, and inclusive decision-making, not hasty amendments driven by small groups. I support constitutional improvements, but only through proper process with broad community engagement and clearly defined mechanisms. This proposal falls short of those essential standards."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
