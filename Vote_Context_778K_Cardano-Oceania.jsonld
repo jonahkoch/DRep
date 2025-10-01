@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I'm voting yes because this proposal does what most don't: it names names, shows receipts, and puts money where measurable results live. Oceania gets 778,000 ada to build real adoption, infrastructure hackathons, business pilots, university partnerships, and a business-development track that trains local advocates and matches talent to opportunities. This isn't vague community building; it's a structured regional engine with milestone-based fund releases and public accountability through GitHub-tracked evidence.\nSelfdriven Services administers it with transparent processes: milestone submissions, dispute resolution through DReps, and independent auditing, ensuring no governance manipulation or self-dealing. The team brings technical, legal, governance, and financial expertise diverse enough to execute, focused enough to deliver.\nCardano needs boots on the ground in underserved markets, not more centralized spending in saturated regions. This targets Oceania's unique mix of cultures and economies as a testbed for grassroots activation models that scale globally. It's lean, constitutional, and replicable. The git commit hash locks the proposal content, preventing bait-and-switch alterations. This is how you fund growth: measurable outcomes, clear accountability, no bureaucratic bloat. I’m voting yes to fund it."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
