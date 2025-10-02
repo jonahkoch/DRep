@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I'm voting yes because this is a loan, not a handout. 5 million ADA at 2.44% interest, repaid within five years from Snek's product revenues. The Snek Foundation already spent $4.5 million of its own money securing Kraken, Crypto.com, and Kucoin listings, the first three Tier 1 exchanges for any Cardano native token. They've proven execution, not promises. SNEK holds 42,000+ wallets and 2 billion ADA in all-time volume. It's the only CNT currently meeting Tier 1 requirements, making it the tactical wedge to crack open exchange infrastructure for the entire ecosystem.\nHere's what this buys: ADA trading pair liquidity on major platforms, compliance frameworks that future tokens can reuse without rebuilding from scratch, and mainstream visibility where retail users actually enter crypto. Intersect administers it with bi-yearly reporting and independent audits. A board including Tal Cohen, Frederik Gregaard, Phillip Pon, and Fahmi Syed ensures alignment. This isn't about pumping one token, it's infrastructure investment that creates repeatable pathways for CNTs while the treasury gets repaid with interest. Risk-to-reward favors an abundance mindset."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
