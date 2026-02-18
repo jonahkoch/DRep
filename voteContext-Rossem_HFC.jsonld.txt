@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I'm voting yes because some things in governance aren't about budget or protocol mechanics, they're about people. Naming Protocol Version 11 the \"van Rossem Hard Fork\" honors a man who made Cardano's governance framework better by being exactly the kind of contributor every ecosystem needs, thoughtful, generous, precise, and genuinely committed to the people alongside him.\nMax van Rossem's contributions were substantive and lasting. He was a primary driving force behind Article VIII in the Cardano Constitution, the provision that attempted to enshrines community discussion, openness, and participation as foundational principles. Max insisted it mattered enough to write into the network's DNA and that language was carelessly removed in epoch 608 by a majority of DReps, I was in the minority and the dissenting view in voting No for Cardano Constitution v2.4. \nHe served as a delegate representing the Dutch Cardano community at the Constitutional Convention in Buenos Aires, helped lead the Constitutional Committee Election Working Group, and served as a dedicated DRep within the Dutch DRep Collective to ensure his community's voice carried weight in governance decisions. These weren't ceremonial roles, they were the hard, careful, and deliberate work of building governance infrastructure that people could actually believe in.\nBeyond formal contributions, Max understood something profound about blockchains, they are memory machines. AdaMoments, his project enabling ada holders to preserve images, videos, and personal history permanently on-chain, reflected a creative vision of Cardano as durable public infrastructure for human experience, not just financial transactions. He built connections, facilitated meetups, and reminded the ecosystem that governance is about people before it is about process.\nCardano has a principled tradition of naming hard forks after those who shaped the ecosystem, Vasil, Chang, Plomin. This continues that tradition coherently and with deep sincerity. Max's legacy is already written into Cardano's constitution and governance frameworks. The van Rossem Hard Fork simply makes it visible. This vote is cast with gratitude, respect, and remembrance."
+  },
+  "hashAlgorithm": "blake2b-256"
+}

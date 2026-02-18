@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I'm voting yes because the Constitutional Committee is the institutional backbone preventing governance collapse and treasury capture. Without a functioning CC, there's no constitutional enforcement, no treasury execution, and no governance. The system is paralyzed or devolves into a SPO directed hard fork. Expecting this work to continue unpaid isn't principled frugality, it's negligence that guarantees a select few, only the wealthy, self-serving, or corrupt serve.\nCC members carry real workload and legal liability. We should expect professionalism and accountability that protects the entire ecosystem from malicious actors and governance capture. The alternative to compensation is to compromise independence, invite corruption and risk stagnation.\nThis budget requests 1,000,000 ADA to compensate five of seven serving CC members for epochs 581-653. That's 200,000 ADA per seat, covering roughly 25 people total across multi-member councils. At current prices, this works out to under $20,000 USD per person annually far below market rate for equivalent legal and governance oversight in any comparable ecosystem. Two members (KtorZ and Phil_uplc) are declining compensation entirely, demonstrating this isn't a cash grab.\nThe Cardano Constitution explicitly mandates this in Article VII, Section 8: \"Cardano Blockchain ecosystem budgets shall provide for periodic administrative costs of the Constitutional Committee.\" This isn't discretionary, it's constitutional obligation. Administration runs through Intersect's audited smart contract framework with transparent milestone tracking and community oversight. Refusing to fund the CC while demanding they protect treasury integrity and constitutional compliance is hypocrisy. You can't expect professional performance from volunteer labor under legal liability."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
